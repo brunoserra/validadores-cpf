@@ -20,10 +20,18 @@ function validaCpf(cpf) {
         }
         console.log(soma);
         //operador ternário unico operador javascript que possui 3 operadores
+        //validação do primeiro digito
         var resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
-        if (resultado = !digitos.charAt) {
+        if (resultado = !digitos.charAt(0)) {
+            return false;
+        }
+        soma = 0;
+        numero = cpf.substring(0, 10);
+        for (var k = 11; k > 1; k--) {
+
 
         }
+
 
         return true;
     }
