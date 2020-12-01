@@ -25,6 +25,7 @@ function validaCpf(cpf) {
         if (resultado = !digitos.charAt(0)) {
             return false;
         }
+        //validacao do segundo digito
         soma = 0;
         numeros = cpf.substring(0, 10);
         for (var k = 11; k > 1; k--) {
@@ -45,6 +46,10 @@ function validaCpf(cpf) {
 
 function validar() {
     console.log("Iniciando validação CPF");
+    document.getElementById('success').style.display = "none";
+    document.getElementById('error').style.display = "none";
+
+
     var cpf = document.getElementById('cpf_digitado').value;
     var resultadoValidacao = validaCpf(cpf);
 
