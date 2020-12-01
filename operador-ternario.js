@@ -12,4 +12,9 @@ function verify(isValid) {
 }
 console.log(verify(isValid));
 // resumir essa funçaõ em uma linha de comando
-// com ternario
+// com ternario 
+const result = isValid ? true : false;
+let zero = 0;
+
+const numResultado = 0 > 0 ? 0 : -1;
+console.log(numResultado);
