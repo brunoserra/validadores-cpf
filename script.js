@@ -26,11 +26,16 @@ function validaCpf(cpf) {
             return false;
         }
         soma = 0;
-        numero = cpf.substring(0, 10);
+        numeros = cpf.substring(0, 10);
         for (var k = 11; k > 1; k--) {
-
+            soma += numeros.charAt(11 - k) * k;
 
         }
+        resultado = (soma % 11) > 2 ? 0 : 11 - (soma % 11);
+        if (resultado != digitos.charAt(1)) {
+            return false;
+        }
+
 
 
         return true;
