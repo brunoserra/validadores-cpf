@@ -6,7 +6,10 @@ console.log("Jav script carregado");
 
 function validaCpf(cpf) {
 
-    return false;
+    console.log(cpf.length);
+    if (cpf.length != 11) {
+        return false;
+    }
 }
 
 
