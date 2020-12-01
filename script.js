@@ -6,7 +6,7 @@ console.log("Jav script carregado");
 
 function validaCpf(cpf) {
 
-    return true;
+    return false;
 }
 
 
@@ -17,8 +17,8 @@ function validar() {
 
     if (resultadoValidacao) {
         document.getElementById('success').style.display = "block";
-
-
+    } else {
+        document.getElementById('error').style.display = "block";
     }
 
 
