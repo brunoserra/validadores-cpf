@@ -16,5 +16,5 @@ console.log(verify(isValid));
 const result = isValid ? true : false;
 let zero = 0;
 
-const numResultado = 0 > 0 ? 0 : -1;
+const numResultado = 0 == 0 ? 0 : -1;
 console.log(numResultado);
