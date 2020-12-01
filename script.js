@@ -10,6 +10,12 @@ function validaCpf(cpf) {
     if (cpf.length != 11) {
         return false;
     } else {
+        var numeros = cpf.substring(0, 9);
+        var digitos = cpf.substring(9);
+
+
+
+
         return true;
     }
 }
