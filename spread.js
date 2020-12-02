@@ -11,7 +11,9 @@ for (let i = 0; i < lista.length; i++) {
         }
     }
 }
-console.log(lista);
 
 
-//outra forma mais simples de fazer
+
+//outra forma mais simples de fazer 
+const listaResult = [1, 2, ...listaIncluir, 5];
+console.log(listaResult);
